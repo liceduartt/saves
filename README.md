@@ -5,7 +5,7 @@ Objetivo: o objetivo principal do nosso trabalho foi criar um sistema de cadastr
 
 Tarefas realizadas:
 
-A Larissa ficou responsável por fazer parte do código
-A Rafaely fez a outra parte do código
-A Letícia fez a pesquisa do código e ajudou a preparar a apresentação
-A Alicia ficou encarregada de preparar a apresentação e testar e enviar o código
+A Larissa ficou responsável por fazer parte do código.
+A Rafaely fez a outra parte do código.
+A Letícia fez a pesquisa do código e ajudou a preparar a apresentação.
+A Alicia ficou encarregada de preparar a apresentação e testar e enviar o código.
