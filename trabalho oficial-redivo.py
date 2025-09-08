@@ -1,4 +1,4 @@
-#trabalho oficial - redivo
+#Nomes: Alicia, Larissa, Letícia e Rafaely
 nomes = []
 especies = []
 idades = []
@@ -140,5 +140,6 @@ def menu():
 
 # Iniciar o sistema
 menu()
+
 
 
