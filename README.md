@@ -5,7 +5,7 @@ Objetivo: o objetivo principal do nosso trabalho foi criar um sistema de cadastr
 
 Tarefas realizadas:
 
-A Larissa fez a parte do cadastro e listar
-A Rafaely fez a parte do vacinar
-A Letícia fez a parte do excluir
-A Alicia fez a parte do menu e editar
+A Larissa fez a parte do cadastro e listar.
+A Rafaely fez a parte do vacinar.
+A Letícia fez a parte do excluir.
+A Alicia fez a parte do menu e editar.
