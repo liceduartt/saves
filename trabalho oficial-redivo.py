@@ -1,4 +1,7 @@
 #Nomes: Alicia, Larissa, Letícia e Rafaely
+#codigo alterado
+
+#TRABALHO OFICIAL-REDIVO
 nomes = []
 especies = []
 idades = []
@@ -70,7 +73,8 @@ def editar_pets():
                 print("1. Editar nome")
                 print("2. Editar espécie")
                 print("3. Editar idade")
-                print("4. Voltar ao menu principal")
+                print("4. Excluir pet")
+                print("5. Voltar ao menu principal")
                 opcao = input("Escolha uma opção: ").strip()
 
                 match opcao:
@@ -102,6 +106,14 @@ def editar_pets():
                             print("Por favor, digite um número inteiro válido.")
 
                     case '4':
+                        excluir = input(f"Tem certeza que deseja excluir o pet '{nomes[i]}'? (s/n): ").strip().lower()
+                        if excluir == 's':
+                            excluir_pet(i)
+                            break  
+                        else:
+                            print("Exclusão cancelada.")
+
+                    case '5':
                         print("Voltando ao menu principal...")
                         break
 
@@ -112,6 +124,13 @@ def editar_pets():
     except ValueError:
         print("Entrada inválida. Digite um número.")
 
+def excluir_pet(index):
+    nome_pet = nomes.pop(index)
+    especies.pop(index)
+    idades.pop(index)
+    vacinados.pop(index)
+    print(f"Pet {nome_pet} excluído com sucesso!")
+
 def menu():
     while True:
         print("\nMenu do sistema:")
@@ -119,7 +138,8 @@ def menu():
         print("2. Listar pets")
         print("3. Vacinar pet")
         print("4. Editar informações")
-        print("5. Sair")
+        print("5. Excluir pet")
+        print("6. Sair")
         opcao = input("Escolha uma opção: ").strip()
         print("")
 
@@ -133,13 +153,23 @@ def menu():
             case '4':
                 editar_pets()
             case '5':
+                excluir_pet_menu()
+            case '6':
                 print("Saindo do sistema...")
                 break
             case _:
                 print("Opção inválida. Tente novamente.")
 
+def excluir_pet_menu():
+    listar_pets()
+    try:
+        i = int(input("Número do pet para excluir: ")) - 1
+        if 0 <= i < len(nomes):
+            excluir_pet(i)
+        else:
+            print("Número inválido.")
+    except ValueError:
+        print("Entrada inválida. Digite um número.")
+
 # Iniciar o sistema
 menu()
-
-
-
